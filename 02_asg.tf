@@ -44,7 +44,7 @@ resource "aws_autoscaling_group" "scott_asg" {
   name                 = "scott-asg"
   launch_configuration = aws_launch_configuration.scott_launch_config.name
   vpc_zone_identifier  = [aws_subnet.scott_subnet_1.id, aws_subnet.scott_subnet_2.id]
-  min_size = 3
+  min_size = 5
   max_size = 10
   health_check_type = "ELB"
   target_group_arns = [aws_lb_target_group.scott_alb_tg.arn]
