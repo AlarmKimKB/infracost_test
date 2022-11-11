@@ -14,7 +14,7 @@ terraform {
 
 resource "aws_instance" "ubuntu" {
   ami                    = "ami-0e9bfdb247cc8de84"
-  instance_type          = "t2.micro"
+  instance_type          = "t3.medium"
 
   tags = {
     name = "atlantis-test-instance"
