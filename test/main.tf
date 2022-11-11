@@ -12,11 +12,11 @@ terraform {
   }
 }
 
-resource "aws_instance" "ubuntu" {
+resource "aws_instance" "test" {
   ami                    = "ami-0e9bfdb247cc8de84"
   instance_type          = "t2.small"
 
   tags = {
-    name = "atlantis-test-instance"
+    name = "atlantis-test-instance-02"
   }
 }
